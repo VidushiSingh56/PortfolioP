@@ -1,0 +1,222 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the .landing container */
+.landing {
+    color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/groupland.png);
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Styles for the .home section */
+.home {
+    font-family: "Centra No2";
+    font-size: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    text-align: center;
+
+
+    /* min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background: #010718; 
+    overflow: hidden; */
+}
+
+.home h1 {
+    margin: 0 auto;
+}
+
+.text1,
+.text2 {
+    margin: 12px auto;
+}
+
+/* Styles for the .container section */
+.container {
+    text-align: center;
+    width: 330px;
+    overflow: hidden;
+}
+
+.container .plus {
+    color: rgb(255 0 160);
+    position: relative;
+    
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.container .plus.text1 {
+    color: antiquewhite;
+}
+
+.container .plus.text2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101%;
+    width: 100%;
+    background-color: rgb(1, 8, 31);
+    border-left: 2px solid rgb(255 0 160);
+    color: antiquewhite;
+    animation: animate 4s steps(12) infinite;
+}
+@keyframes animate {
+
+    40%,60% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+
+
+/* Styles for the .navbar section */
+.navbar {
+    position: absolute;
+    right: 20px; /* Adjust the right spacing as needed */
+    top: 15px;
+}
+
+.navbar a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    border: 2px solid rgb(255 0 160);
+    border-radius: 30px;
+    background-color: rgb(255 0 160);
+    padding: 4px 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+    display: flex;
+    padding: 3px 17px;
+    font-size: 20px;
+    font-family: "Centra No2";
+}
+
+/* Styles for the .con section */
+.con {
+    display: flex;
+    position: relative;
+    top: 41px;
+    font-size: 29px;
+    /* height: 2.rem; */
+}
+
+.con a {
+    padding: 9px 9px;
+    padding-bottom: 0;
+    margin: 0 7px;
+    padding-left: 12px;
+    border: 2px solid;
+    border-radius: 50%;
+    color: rgb(255 0 160);
+}
+
+.con a:hover {
+    background-color: rgb(255 0 160);
+    color: rgb(0, 0, 0);
+}
+
+.con a:active {
+    text-decoration: solid rgb(255 0 160);
+}
+
+/* Styles for the .btn section */
+.btn,
+.btn a {
+    position: relative;
+    top: 6rem;
+    border: 2px solid rgb(255 0 160);
+    background-color: rgb(255 0 160);
+    padding: 7px 17px;
+    border-radius: 50px;
+    color: rgb(1 8 31);
+    width: 221px;
+    font-size: 24px;
+    font-family: "Centra No2";
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Media Query for Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .home {
+        font-size: 20px;
+    }
+
+    .text1,
+    .text2 {
+        margin: 8px auto;
+    }
+
+    .container .plus {
+        font-size: 20px;
+    }
+
+    .container .plus.text2::before {
+        border-left: 1px solid rgb(255 0 160);
+    }
+
+    .navbar {
+        right: 10px;
+    }
+
+    .navbar a:hover {
+        padding: 4px 15px;
+    }
+
+    .navbar li {
+        padding: 3px 10px;
+        font-size: 18px;
+    }
+
+    .con {
+        font-size: 24px;
+        height: 2.8rem;
+    }
+
+    .con a {
+        padding: 8px 8px;
+        margin: 0 5px;
+    }
+
+    .btn,
+    .btn a {
+        top: 4rem;
+        font-size: 20px;
+    }
+}
