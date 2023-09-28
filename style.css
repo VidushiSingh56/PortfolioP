@@ -3,8 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Centra No2";
 }
-
+h1{
+    font-size: 3rem;
+}
 /* Apply styles to the .landing container */
 .landing {
     color: antiquewhite;
@@ -73,9 +76,9 @@
 .container .plus.text2::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
-    height: 101%;
+    height: 117%;
     width: 100%;
     background-color: rgb(1, 8, 31);
     border-left: 2px solid rgb(255 0 160);
@@ -172,6 +175,275 @@
     cursor: pointer;
 }
 
+.about {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/Group\ 10312.png);
+    padding: 20px;
+    height: 42rem;
+    text-align: center; /* Center the content */
+}
+
+/* Center the <h1> text */
+.about h1 {
+    /* font-size: 3rem; */
+    color: rgb(237, 234, 230);
+    margin-bottom: 20px;
+}
+
+/* Create a responsive grid */
+.grid1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style the image */
+.image img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid rgb(237, 234, 230);
+    margin-bottom: 20px;
+    width: 50%; /* Set the width of the image */
+    position: relative;
+    right: 5%;
+}
+
+/* Style the paragraph */
+.para {
+    font-size: 1.23rem; /* Set the font size of the text */
+    color: rgb(237, 234, 230);
+    max-width: 100%;
+    padding: 0 20px;
+    text-align: justify;
+    position: relative;
+    left: 5%;
+}
+
+
+
+.project {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/3rd.png);
+    background-size: cover;
+    padding: 20px;
+    /* height: 41rem; */
+    text-align: center; /* Center the content */
+}
+
+/* Center the <h1> text */
+.project h1 {
+   
+    color: rgb(237, 234, 230);
+    margin-bottom: 20px;
+}
+
+/* Create a responsive grid */
+.pro {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 100%;
+    justify-items: center;
+    margin-top: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(350px,2fr));
+    width: 94%;
+    /* padding-left: 6%; */
+}
+
+/* Style the project items */
+.pro .item {
+    border: 2px solid #414040;
+    border-radius: 17px;
+    width: 367px;
+    position: relative;
+    background-size: cover;
+    background-position: left;
+    background-repeat: round;
+    height: 200px;
+}
+
+.pro .item:hover {
+    box-shadow: 3px 3px 10px rgb(0 0 0);
+    background-color: rgb(255 0 160);
+    position: relative;
+    transform: scale(1.05);
+}
+
+
+
+
+.pro #item3,
+#item4 {
+    margin-top: 0px;
+}
+
+.pro #item1,
+#item2 {
+    margin-bottom: 0px;
+}
+
+.pro #item1 {
+    background-image: url(img/gym.png);
+    background-size: cover;
+    background-position-x: left;
+    background-repeat: round;
+    position: relative;
+
+}
+
+.pro #item2 {
+    background-image: url(img/food.png);
+    background-size: cover;
+    background-position-x: left;
+    background-repeat: round;
+    position: relative;
+}
+
+.pro #item3 {
+    background-image: url(img/jio.png);
+    background-size: cover;
+    background-position-x: left;
+    background-repeat: round;
+    position: relative;
+}
+
+.pro #item4 {
+    background-image: url(img/port\ \(2\).png);
+    background-size: cover;
+    background-position-x: left;
+    background-repeat: round;
+    position: relative;
+
+}
+
+
+.skills {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-image: url('img/4th.png');
+    background-size: cover;
+    padding: 20px;
+    text-align: center; /* Center the content */
+    color: rgb(237, 234, 230);
+}
+
+/* Center the <h1> text */
+.skills h1 {
+    /* font-size: 2rem; */
+    margin-bottom: 20px;
+}
+
+/* Center the group of images */
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* Style the circular images */
+.circle {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* Make the images responsive */
+
+
+
+
+
+.contact {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    background-image: url(img/5th.png);
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    color: rgb(237, 234, 230);
+    /* margin-top: 20px; */
+}
+/* Center the <h1> text */
+.contact h1 {
+    /* font-size: 2rem; */
+    margin-bottom: 20px;
+}
+
+/* Center the details section */
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+/* Style the individual sections */
+.sec {
+    text-align: center;
+    flex-basis: 30%; /* Adjust the column width as needed */
+}
+
+.r1 {
+    font-weight: lighter;
+    font-size: 32px;
+    font-family: "Centra No2";
+    font-weight: 400;
+}
+
+/* Style the icons */
+.ico {
+    font-size: 46px;
+}
+
+/* Style the contact content */
+.content {
+    font-family: "Centra No2";
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+/* Hover effect for icons */
+.ico:hover {
+    transform: scale(1.5);
+}
+
+/* Social media links */
+.me {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    margin-bottom: 21px;
+}
+
+.cont {
+    font-size: 29px;
+}
+
+.cont a {
+    padding: 10px;
+    margin: 0 10px;
+    border: 2px solid rgb(255, 0, 160);
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 0, 160);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cont a:hover {
+    background-color: rgb(100, 4, 65);
+    color: rgb(0, 0, 0);
+}
+
+/* Responsive adjustments */
+
+
+
 /* Media Query for Responsive Adjustments */
 @media screen and (max-width: 768px) {
     .home {
@@ -213,10 +485,121 @@
         padding: 8px 8px;
         margin: 0 5px;
     }
-
+h1{
+    font-size: 2rem;
+}
     .btn,
     .btn a {
         top: 4rem;
         font-size: 20px;
+    }
+    .para {
+        left: 0%;
+    }
+    .image img{
+        position: relative;
+    right : 0%;
+    }
+    .group {
+        flex-direction: column;
+        align-items: center;
+    }
+    .circle{
+        width: 90px;
+        height: 90px;
+    }
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec {
+        width: auto;
+    }
+}
+@media (max-width: 768px) and (min-width: 0px){
+.para{
+    font-size: 90%;
+}
+.image img{
+    width: 34%;
+}
+}
+@media (max-width: 1123px) and (min-width: 1030px)
+{
+    .pro{
+        gap: 51px;
+        
+    }
+    .item{
+        width: 326px;
+        height: 121px;
+    }
+}
+/* Apply responsive styles */
+@media screen and (min-width: 768px) {
+    .grid1 {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .image {
+        order: 2;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .para {
+        order: 1;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec {
+        width: 100%;
+    }
+}
+/* @media (max-width:375px) 
+{
+   .pro{
+    padding-left: 0%;
+   }
+   .item{
+    width: 200px;
+    height: 190px;
+   }
+} */
+@media screen and (max-width: 415px) {
+    .pro {
+        /* padding-left: 0%;
+        padding-right: 20%; */
+       
+    }
+    .circle{
+        width: 69px;
+    height: 69px;
+    }
+
+    /* Adjust the width and height of project items for mobile */
+    .pro .item {
+        width: 230px;
+        height: 120px;
+       
+    }
+
+    /* Center the <h1> text for mobile */
+    .project h1 {
+        /* margin: 20px 0; */
+    }
+}
+@media screen and (max-width:300px)
+{
+    .pro{
+
+    }
+    .pro .item{
+        width: 150px;
+        height: 100px;
     }
 }
